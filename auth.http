@@ -1,0 +1,33 @@
+POST http://localhost:4000/api/auth/new
+Content-Type: application/json
+
+{
+  "name": "sheila",
+  "email": "sheilafundora04@gamil.com",
+  "password": "123456789"
+}
+###
+
+POST http://localhost:4000/api/auth
+Content-Type: application/json
+
+{
+"name": "sheila",
+"email": "sheilafundora04@gamil.com",
+"password": "123456789"
+}
+
+###
+
+GET http://localhost:4000/api/auth/renew
+Content-Type: application/json
+
+{
+"name": "sheila",
+  "email": "sheilafundora04@gamil.com",
+"password": "123456789",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2MzMTIxM2FiOTU2YzI4YzdmNTEyNGEiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc0NDE3NDQxLCJleHAiOjE2NzQ0MjQ2NDF9.1_iRE5o-ozZEBcT1HhBm1Gu3UvK9c7fcZitgp6nx88s"
+}
+
+###
+
