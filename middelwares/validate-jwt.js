@@ -3,7 +3,8 @@ const {response} = require('express');
 const Process = require("process");
 
 const validateToken= (req, res = response, next) => {
-    const token = req.header('x-token');
+    // const token = req.header('x-token');
+    const token = req.body.token;
 
     if( !token ){
         return res.status(401).json({

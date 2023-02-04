@@ -1,30 +1,55 @@
 const {response} = require('express');
-const Event = require("../model/Note");
+const Note = require("../model/Note");
 const jwt = require('jsonwebtoken');
 const Process = require("process");
 
 const getNotes =  async (req, res = response) => {
 
-    const event = await Event.find().populate('user');
-    // tabla asociada o sea los del usuario
-    res.status(200).json({
-        ok: false,
-        event
-    })
+    const payload = jwt.verify(
+        req.body.token,
+        Process.env.SECRET_JWT
+    )
+
+    user_id = payload.uid;
+
+    console.log(payload)
+
+    try{
+        const note =  await Note.find({user: Object(user_id)});
+
+        if( !note ){
+            return res.status(400).json({
+                ok: false,
+                sms: 'La nota no existe por esa id'
+            })
+        }
+
+        res.status(201).json({
+            ok: true,
+            note
+        })
+
+    }catch(error){
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            sms: 'Por favor hable con el administrador'
+        })
+    }
 }
 
 const createNotes = async (req, res = response) => {
     try{
-        const event = new Event( req.body);
+        const note = new Note( req.body);
 
         const payload = jwt.verify(
-            req.header('x-token'),
+            req.body.token,
             Process.env.SECRET_JWT
         )
 
-        event.user = payload.uid; //aqui le estamos asignando al campo user d la tabla evento l uid q tenemos en la rq
+        note.user = payload.uid;
 
-        const saveEvent = await event.save();
+        const saveEvent = await note.save();
 
         res.status(201).json({
             ok: true,
@@ -42,10 +67,12 @@ const createNotes = async (req, res = response) => {
 
 const deleteNotes =  async (req, res = response) => {
 
-    const eventId = req.params.id;
+    const noteId = "63ddd8dee8720c3898d2b0ca";
+
+    console.log(noteId)
 
     try{
-        const event = await Event.findById(eventId);
+        const event =  await Note.findById(noteId);
 
         if( !event ){
             return res.status(400).json({

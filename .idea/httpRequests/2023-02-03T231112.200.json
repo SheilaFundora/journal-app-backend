@@ -1,0 +1,33 @@
+{
+  "ok": false,
+  "note": [
+    {
+      "title": "asd",
+      "description": "primra  nota",
+      "date": "2023-01-31T05:00:00.000Z",
+      "user": {
+        "_id": "63ddd12d9a36b31318c059e0",
+        "name": "sheila",
+        "email": "sheilafundora04@gmail.com",
+        "password": "$2a$10$uMv3PBL6gKx9sFZEscRBEugECqhy/9czuu5QC4lIvFYQxxW9uT33S",
+        "__v": 0
+      },
+      "__v": 0,
+      "id": "63ddd88ae8720c3898d2b0c7"
+    },
+    {
+      "title": "nota de eriel",
+      "description": "segunda  nota",
+      "date": "2023-01-31T05:00:00.000Z",
+      "user": {
+        "_id": "63ddd8dee8720c3898d2b0ca",
+        "name": "eriel",
+        "email": "erielmejias99@gmail.com",
+        "password": "$2a$10$83Tp3S8fwclIPkoXUcUdmeO9KQ0Bg9Cc37wdK/zlu5D.Cd8aXeGCG",
+        "__v": 0
+      },
+      "__v": 0,
+      "id": "63ddd91ae8720c3898d2b0cd"
+    }
+  ]
+}

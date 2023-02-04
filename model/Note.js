@@ -1,6 +1,6 @@
 const {model, Schema} = require("mongoose");
 
-const EventSchema = Schema({
+const NoteSchema = Schema({
     title: {
         type: String,
         required: true
@@ -23,12 +23,10 @@ const EventSchema = Schema({
     }
 })
 
-//aqui podemos configurar ciertas cosas en los modelos d la bd
-//x defecto cuando se crea una tabla se pone _id, y queremos cambiar esto x id
-EventSchema.method('toJSON', function (){
-    const {_id, ...object} = this.toObject();//en this.toObject tenemos todoo, sacamos el id, y el resto lo dejamos como esta
+NoteSchema.method('toJSON', function (){
+    const {_id, ...object} = this.toObject();
     object.id = _id
     return object;
 })
 
-module.exports = model('Event', EventSchema);
+module.exports = model('Note', NoteSchema);

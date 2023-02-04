@@ -6,9 +6,7 @@ const createUser = async (req, res = response) => {
 
     const { email, password } = req.body;
 
-    //instancea del modelo UserSchema, le manamos directo el body
     try{
-        //validar si el email existe
         let user = await User.findOne( {email} ); //entre {} xq resibe un object
 
         if (user){
@@ -19,11 +17,7 @@ const createUser = async (req, res = response) => {
         }
         user = new User(req.body);
 
-        //encriptar contrasenna
         const salt = bcrypt.genSaltSync();
-        //aqui encriptamos la contrasenna llamando a la funcion hashSync q recibe la contrasenna q
-        // queremos encriptar y el salt q no es mas q los saltos q queremos q tenga, por defecto viene en 10 mientras
-        // mas grande mas segura pero mas leno
 
         user.password = bcrypt.hashSync( password, salt);
 
@@ -62,7 +56,6 @@ const loginUser = async (req, res = response) => {
             })
         }
 
-        //Verificar si la contrasenna q hay en base d datos es igual a la enviada x el UserSchema
         const validPassw = bcrypt.compareSync(password, user.password);
 
         if ( !validPassw ){

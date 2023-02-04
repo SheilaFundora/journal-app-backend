@@ -11,10 +11,10 @@ router.use(validateToken);
 Direccion para estas rutas /api/notes
  */
 
-//get event
+//get note
 router.get('/', getNotes);
 
-//create event
+//create note
 router.post('/',
     [
         check('title','The title is requerid').not().isEmpty(),
@@ -23,10 +23,10 @@ router.post('/',
     ],
     createNotes);
 
-//delete event
+//delete note
 router.delete('/:id', deleteNotes);
 
-//update evento
+//update note
 router.put('/:id', updateNotes);
 
 module.exports = router;

@@ -1,32 +1,32 @@
-POST http://localhost:4000/api/auth/new
+POST http://localhost:5000/api/auth/new
 Content-Type: application/json
 
 {
-  "name": "sheila",
-  "email": "sheilafundora04@gamil.com",
+  "name": "eriel",
+  "email": "erielmejias99@gmail.com",
   "password": "123456789"
 }
 ###
 
-POST http://localhost:4000/api/auth
+POST http://localhost:5000/api/auth
 Content-Type: application/json
 
 {
-"name": "sheila",
-"email": "sheilafundora04@gamil.com",
-"password": "123456789"
+  "name": "sheila",
+  "email": "sheilafundora04@gmail.com",
+  "password": "123456789"
 }
 
 ###
 
-GET http://localhost:4000/api/auth/renew
+GET http://localhost:5000/api/auth/renew
 Content-Type: application/json
 
 {
 "name": "sheila",
   "email": "sheilafundora04@gamil.com",
 "password": "123456789",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2MzMTIxM2FiOTU2YzI4YzdmNTEyNGEiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc0NDE3NDQxLCJleHAiOjE2NzQ0MjQ2NDF9.1_iRE5o-ozZEBcT1HhBm1Gu3UvK9c7fcZitgp6nx88s"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2RkZDEyZDlhMzZiMzEzMThjMDU5ZTAiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc1NDgyMTUwLCJleHAiOjE2NzU0ODkzNTB9.HUDuK6zBeUqFiodSKZH9r3mnaoEHwHSGGZMncjVf_iY"
 }
 
 ###
