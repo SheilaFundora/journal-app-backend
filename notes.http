@@ -13,20 +13,19 @@ GET http://localhost:5000/api/notes/
 Content-Type: application/json
 
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2RkZDEyZDlhMzZiMzEzMThjMDU5ZTAiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc1NDg1MTIwLCJleHAiOjE2NzU0OTIzMjB9.J5v0ADmmeJ3PBXs-wxyrGSf1cejoAGcjq9wR4Aj4-ak"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2RkZDEyZDlhMzZiMzEzMThjMDU5ZTAiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc1NTMxMTUxLCJleHAiOjE2NzU1MzgzNTF9.YZBHLhCoibFpUsYysR6cCwHTajfgtsN0CLFiz02y4xs"
 }
 
 ###
 
-PUT http://localhost:5000/api/notes/63dbe93fa110b03bb349e9a6
+PUT http://localhost:5000/api/notes/63dddfeef60367815cbd82f4
 Content-Type: application/json
 
 {
-  "title": "asdasd nooo",
-  "notes": " titulo cambiado",
-  "date_start": "Tue Jan 31 2023 14:00:00 GMT-0500 (Cuba Standard Time)",
-  "date_end": "Tue Jan 31 2023 15:00:00 GMT-0500 (Cuba Standard Time)",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2Q5ZDdjZmM1YThkNDEyYzAxZTQ0ZWYiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc1MzU1NjU0LCJleHAiOjE2NzUzNjI4NTR9.4_OISEmPbwsUf8Vg4cWXA1K_cigQ90pDyW892YYd0oU"
+  "title": "nota de shela modificada",
+  "description": "modificando la priemra nota",
+  "date": "Tue Jan 31 2023 ",
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2RkZDEyZDlhMzZiMzEzMThjMDU5ZTAiLCJuYW1lIjoic2hlaWxhIiwiaWF0IjoxNjc1NTMxMTUxLCJleHAiOjE2NzU1MzgzNTF9.YZBHLhCoibFpUsYysR6cCwHTajfgtsN0CLFiz02y4xs"
 }
 
 ###
