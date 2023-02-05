@@ -11,7 +11,7 @@ const getNotes =  async (req, res = response) => {
     )
 
     user_id = payload.uid;
-    
+
     try{
         const note =  await Note.find({user: Object(user_id)});
 

@@ -1,0 +1,11 @@
+{
+  "ok": false,
+  "error": {
+    "password": {
+      "value": "1",
+      "msg": "The password have to have 6 caracteres ",
+      "param": "password",
+      "location": "body"
+    }
+  }
+}

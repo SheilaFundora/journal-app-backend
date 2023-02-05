@@ -1,3 +1,29 @@
+POST http://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+  "name": "sheila",
+  "email": "sheilafundora04@gmail.com",
+  "password": "1"
+}
+
+<> 2023-02-04T225100.400.json
+
+###
+
+POST http://localhost:5000/api/auth
+Content-Type: application/json
+
+{
+  "name": "sheila",
+  "email": "sheilafundora04@gmail.com",
+  "password": "123456789"
+}
+
+<> 2023-02-04T225006.201.json
+
+###
+
 DELETE http://localhost:5000/api/notes/63dbe93fa110b03bb349e9a9
 Accept: application/json
 
@@ -539,30 +565,6 @@ Content-Type: application/json
 }
 
 <> 2023-02-03T232236.400.json
-
-###
-
-GET http://localhost:5000/api/notes/
-Content-Type: application/json
-
-{
-  "user_id": "63ddd8dee8720c3898d2b0ca",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2RkZDhkZWU4NzIwYzM4OThkMmIwY2EiLCJuYW1lIjoiZXJpZWwiLCJpYXQiOjE2NzU0ODMzNzEsImV4cCI6MTY3NTQ5MDU3MX0.ufZ0_SbpzCuCHjR4WzyJDdvyneHpOK8EyYPyYYZNQ2c"
-}
-
-<> 2023-02-03T232234.400.json
-
-###
-
-GET http://localhost:5000/api/notes/
-Content-Type: application/json
-
-{
-  "user_id": "63ddd8dee8720c3898d2b0ca",
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2M2RkZDhkZWU4NzIwYzM4OThkMmIwY2EiLCJuYW1lIjoiZXJpZWwiLCJpYXQiOjE2NzU0ODMzNzEsImV4cCI6MTY3NTQ5MDU3MX0.ufZ0_SbpzCuCHjR4WzyJDdvyneHpOK8EyYPyYYZNQ2c"
-}
-
-<> 2023-02-03T232220.400.json
 
 ###
 

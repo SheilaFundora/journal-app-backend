@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="847c07b1-e386-4922-811d-2998f9cbf162" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T230811.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T230833.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T230850.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T230935.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T230947.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T231008.201.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T231022.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T231040.404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T231110.200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T232220.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2023-02-03T232234.400.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.http" beforeDir="false" afterPath="$PROJECT_DIR$/auth.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/notes.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/notes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.http" beforeDir="false" afterPath="$PROJECT_DIR$/notes.http" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,10 +31,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../journal-app" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="HTTP Request.All in notes">
+  <component name="RunManager" selected="HTTP Request.auth | #2">
     <configuration name="All in notes" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/notes.http">
       <method v="2" />
     </configuration>
@@ -58,11 +52,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.auth | #2" />
         <item itemvalue="HTTP Request.All in notes" />
         <item itemvalue="HTTP Request.notes | #4" />
         <item itemvalue="HTTP Request.notes | #2" />
         <item itemvalue="HTTP Request.notes | #3" />
-        <item itemvalue="HTTP Request.auth | #2" />
       </list>
     </recent_temporary>
   </component>
@@ -77,7 +71,8 @@
       <workItem from="1675453338114" duration="7337000" />
       <workItem from="1675479787675" duration="5358000" />
       <workItem from="1675530414246" duration="229000" />
-      <workItem from="1675530856528" duration="546000" />
+      <workItem from="1675530856528" duration="946000" />
+      <workItem from="1675568886344" duration="1108000" />
     </task>
     <servers />
   </component>
