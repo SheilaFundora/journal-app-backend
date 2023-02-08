@@ -25,10 +25,12 @@ const createUser = async (req, res = response) => {
 
         const token = await generateJWT(user.id, user.name)
 
+        user = await User.findOne( {email} );
+
         res.status(201).json({
             ok: true,
-            email,
-            password,
+            uid: user.id,
+            name: user.name,
             token
         })
 
