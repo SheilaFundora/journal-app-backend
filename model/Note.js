@@ -12,10 +12,9 @@ const NoteSchema = Schema({
         type: Date,
         required: true
     },
-    url_img: {
+    url: {
         type: String,
     },
-
     user: {
         type: Schema.Types.ObjectId,
         ref: 'User',

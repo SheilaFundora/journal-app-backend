@@ -47,11 +47,11 @@ const createNotes = async (req, res = response) => {
 
         note.user = payload.uid;
 
-        const saveEvent = await note.save();
+        const saveNote = await note.save();
 
         res.status(201).json({
             ok: true,
-            saveEvent
+            saveNote
         })
 
     }catch(error){
