@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "saveToDo": {
+    "name": "aprender docker",
+    "description": "aprender docker y montar un crud en un mern",
+    "date": "2023-01-31T19:00:00.000Z",
+    "_id": "644f2cbb1a67e1119eaa4612",
+    "__v": 0
+  }
+}

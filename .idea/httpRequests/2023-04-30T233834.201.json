@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "toDopdated": {
+    "_id": "644f2cbb1a67e1119eaa4612",
+    "name": "aprender docker up",
+    "description": "aprender docker y hacer un crud en node, react ... MERN y montarlo en docker",
+    "date": "2023-01-31T19:00:00.000Z",
+    "__v": 0
+  }
+}

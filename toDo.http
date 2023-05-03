@@ -1,0 +1,27 @@
+POST http://localhost:4000/api/todo/
+Content-Type: application/json
+
+{
+  "name": "to do 5",
+  "description": "fgdhoajfofrgoerjgerjgwergowergowergowgiwrgiqrjgiwrgwi",
+  "date": "Tue Jan 31 2023 14:00:00 GMT-0500 (Cuba Standard Time)"
+}
+
+###
+GET http://localhost:4000/api/todo/
+Content-Type: application/json
+
+###
+
+DELETE http://localhost:4000/api/todo/644f2c5e1a67e1119eaa4610
+Accept: application/json
+
+###
+PUT http://localhost:4000/api/todo/644f2cbb1a67e1119eaa4612
+Content-Type: application/json
+
+{
+  "name": "aprender docker up",
+  "description": "aprender docker y hacer un crud en node, react ... MERN y montarlo en docker",
+  "date": "Tue Jan 31 2023 14:00:00 GMT-0500 (Cuba Standard Time)"
+}
